@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Nosifer&display=swap");
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background: black;
+  color: white;
+}
+
+.scary-title {
+  font-family: "Nosifer", cursive;
+  font-size: 4rem;
+  color: #cc0000;
+  text-shadow: 0 0 8px darkred, 0 0 15px crimson, 0 0 30px #8b0000;
+  animation: flicker 1.5s infinite alternate, shake 0.3s infinite;
+  margin-bottom: 20px;
+  text-align: center;
+  padding-top: 5vh;
+  animation: fade-in 5s forwards;
+}
+
+.call-image {
+  max-width: 80%;
+  height: 500px;
+  animation: fade-in 10s forwards;
+}
+
+@keyframes subtle-glitch {
+  0% {
+    transform: translate(0, 0) scale(1);
+    filter: hue-rotate(0deg);
+  }
+  25% {
+    transform: translate(-0.5px, 0.5px) scale(1.005);
+    filter: hue-rotate(1deg);
+  }
+  50% {
+    transform: translate(0.5px, -0.5px) scale(1);
+    filter: hue-rotate(-1deg);
+  }
+  75% {
+    transform: translate(-0.5px, -0.5px) scale(1.005);
+    filter: hue-rotate(1deg);
+  }
+  100% {
+    transform: translate(0, 0) scale(1);
+    filter: hue-rotate(0deg);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 5;
+  }
+}
+
+.fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+  transition: opacity 2s ease-out;
+}
+
+#pageContent {
+  transition: opacity 2s ease-in-out;
+}
+
+#pageContent.fade-out {
+  opacity: 0;
+}
