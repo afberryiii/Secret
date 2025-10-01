@@ -1,8 +1,0 @@
-#NextPageContent {
-  opacity: 0;
-  transition: opacity 2s ease-in-out;
-}
-
-#NextPageContent.fade-in-end {
-  opacity: 1;
-}

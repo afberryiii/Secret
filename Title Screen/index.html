@@ -9,18 +9,50 @@
   <body>
     <h1 class="scary-title">A Sinful Nightmare</h1>
     <img src="Images/6we30u.jpg" alt="Scary Image" class="call-image" />
-    <a href id="pageContent"></a>
-    <audio
-      id="creepyAudio"
-      src="Audio/creepy-halloween-bells-loop-408748.mp3"
-      type="audio/mpeg"
-      loop
-      muted
-      autoplay
-    ></audio>
-    <button id="pickupButton">Pick Up 📞</button>
-    <button id="hangupButton">Hang Up 📵</button>
-    <button id="unmuteButton">Unmute</button>
-    <button id="muteButton">Mute</button>
+    <a href= "PageContent"></a>
+    <div id="pageContent" class="fade-in-start">
+      <audio
+        id="creepyAudio"
+        src="Audio/creepy-halloween-bells-loop-408748.mp3"
+        type="audio/mpeg"
+        loop
+        muted
+        autoplay
+      ></audio>
+      <button id="unmuteButton">Unmute Sound 🔊</button>
+      <body>
+        <div
+          id="pageContent"
+          class="fade-in-start text-center p-6 max-w-lg w-full"
+        >
+          <div
+            class="mt-12 mb-8 p-6 bg-gray-800 bg-opacity-70 rounded-xl border border-gray-700 shadow-2xl"
+          >
+            <h2 class="text-3xl text-yellow-400">INCOMING CALL...</h2>
+            <p class="mt-4 text-xl text-gray-300">
+              A blocked number. Do you dare to answer?
+            </p>
+          </div>
+
+          <div
+            class="button-container space-y-4 md:space-y-0 md:space-x-8 mt-10"
+          >
+            <button
+              id="pickupButton"
+              class="px-8 py-4 text-lg font-bold rounded-lg border-2 border-green-600 bg-green-800 hover:bg-green-700 transition duration-300 transform hover:scale-105 shadow-xl"
+            >
+              Pick Up <span class="text-sm">(Proceed) 📞</span>
+            </button>
+            <button
+              id="hangupButton"
+              class="px-8 py-4 text-lg font-bold rounded-lg border-2 border-red-600 bg-red-800 hover:bg-red-700 transition duration-300 transform hover:scale-105 shadow-xl"
+            >
+              Hang Up <span class="text-sm">(Quit) 📵</span>
+            </button>
+          </div>
+          </div>
+        </div>
+      </body>
+    </div>
   </body>
 </html>
