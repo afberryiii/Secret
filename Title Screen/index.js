@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // 2. Pickup Button Listener (Navigates to next page)
   if (pickupButton && pageContent) {
     pickupButton.addEventListener("click", () => {
-      console.log("Call picked up! Navigating to 1.html...");
+      console.log("Call picked up! Navigating to Story...");
 
       // Ensure sound is playing before transition
       if (backgroundAudio && backgroundAudio.muted) {
@@ -87,7 +87,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       // Navigate to the next page after the animation duration (2.1s)
       setTimeout(() => {
-        window.location.href = "../Prologue/1.html";
+        window.open("../Starting Choice/1.html", "_blank");
       }, 2100);
     });
   }

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CRITICAL: Links the external CSS file for fade effects and styling -->
+    <link rel="stylesheet" href="1.3.css" />
+    <script src="1.3.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- The JavaScript relies on this ID to target the container for fade-in/out -->
+    <div id="sceneContainer" class="text-center p-6 max-w-lg mx-auto">
+      <h1 class="text-5xl mb-8 text-red-600 red-glow"></h1>
+
+      <div
+        class="bg-gray-900 py-4 px-8 rounded-xl border-2 border-red-900 shadow-2xl"
+      >
+        <p class="text-xl dark-text mb-6">
+          "HELP!" The word rips from your throat, a desperate, raw plea that
+          shatters the peaceful silence of the street. Your voice cracks, but
+          the sound is loud and piercing. You glance at the dark, silent houses,
+          a desperate hope fluttering in your chest. Surely, someone is awake.
+          Someone heard you. Chloe, startled by your outburst, turns to you with
+          wide, terrified eyes. "What are you doing?" she whispers, her voice
+          trembling. The shadowy figure with the knife stops, a low, guttural
+          growl rumbling from its chest. The brief pause is all you need. You
+          yank Chloe's hand, pulling her back with you. The blade glints
+          menacingly as it moves, but your cry has bought you a precious few
+          seconds. You scan the area frantically for a place to hide. A large,
+          gnarled oak tree stands to your left, its thick trunk and low-hanging
+          branches offering a potential hiding spot. To your right, a neighbor's
+          unlocked car sits in the driveway, its dark windows a tempting escape.
+        </p>
+      </div>
+      <div class="mt-10 space-y-4">
+        <button
+          id="HideButton"
+          class="w-full px-8 py-4 text-lg font-bold rounded-lg border-2 border-red-600 bg-red-800 hover:bg-red-800 transition duration-300 transform shadow-lg"
+        >
+          HIDE BEHIND A TREE
+        </button>
+        <button
+          id="BreakInButton"
+          class="w-full px-8 py-4 text-lg font-bold rounded-lg border-2 border-red-600 bg-red-800 hover:bg-red-800 transition duration-300 transform shadow-lg"
+        >
+          TRY TO GET IN THE CAR
+        </button>
+      </div>
+    </div>
+  </body>
+</html>

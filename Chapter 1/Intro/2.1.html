@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CRITICAL: Links the external CSS file for fade effects and styling -->
+    <link rel="stylesheet" href="2.1.css" />
+    <script src="2.1.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- The JavaScript relies on this ID to target the container for fade-in/out -->
+    <div id="sceneContainer" class="text-center p-6 max-w-lg mx-auto">
+      <h1 class="text-5xl mb-8 text-red-600 red-glow"></h1>
+
+      <div
+        class="bg-gray-900 py-4 px-8 rounded-xl border-2 border-red-900 shadow-2xl"
+      >
+        Reluctantly, you drag yourself out of bed, the cold sweat on your skin a
+        tangible memory of the nightmare. The phone screen still shows Chloe's
+        text, her cheerful words a stark contrast to the terror that still
+        clings to your mind. You go through the motions of getting ready for
+        school, the mundane routine of getting dressed and grabbing a quick
+        breakfast a welcome anchor to reality. The walk to school is unnervingly
+        normal. The same suburban street from your dream is bathed in the
+        morning sunlight, the houses a comforting, mundane row of brick and
+        siding. As you turn the corner to the school's front entrance, you spot
+        Chloe at her locker, her hair pulled back in a practical ponytail. The
+        relief that washes over you is a physical wave. She looks up, sees you,
+        and smiles. For now, the nightmare is nothing more than a memory fading
+        in the harsh light of a new day. As you approach, a boisterous group of
+        seven friends—the main crew—surrounds her. There's Kevin, the
+        charismatic jock with an easy laugh; Sarah, the witty one who always has
+        a comeback; David, the quiet tech wizard; Maya, the artistic dreamer;
+        and the inseparable trio of Alex, Ben, and Chris, who are always at the
+        center of the group's antics. "Hey, sleepyhead!" Chloe says, her smile
+        contagious. "Did you have fun last night? You guys left early." "Yeah,
+        we were pretty tired," you say, your voice still a little shaky from the
+        dream. "Best night ever, though." A wave of normalcy washes over you,
+        but a small, persistent voice in the back of your mind whispers a
+        warning. The nightmare felt too real to simply be a dream.
+      </div>
+      <div class="mt-10 space-y-4">
+        <button
+          id="askButton"
+          class="w-full px-8 py-4 text-lg font-bold rounded-lg border-2 border-red-600 bg-red-800 hover:bg-red-800 transition duration-300 transform shadow-lg"
+        >
+          ASK CHLOE ABOUT THE DREAM
+        </button>
+    <div class="mt-10 space-y-4">
+        <button
+          id="ignoreButton"
+          class="w-full px-8 py-4 text-lg font-bold rounded-lg border-2 border-red-600 bg-red-800 hover:bg-red-800 transition duration-300 transform shadow-lg"
+        >
+          KEEP IT TO YOURSELF AND ENJOY THE MOMENT
+        </button>
+      </div>
+    </div>
+  </body>
+</html>

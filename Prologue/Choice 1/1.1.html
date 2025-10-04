@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CRITICAL: Links the external CSS file for fade effects and styling -->
+    <link rel="stylesheet" href="1.1.css" />
+    <script src="1.1.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- The JavaScript relies on this ID to target the container for fade-in/out -->
+    <div id="sceneContainer" class="text-center p-6 max-w-lg mx-auto">
+      <h1 class="text-5xl mb-8 text-red-600 red-glow"></h1>
+
+      <div
+        class="bg-gray-900 py-4 px-8 rounded-xl border-2 border-red-900 shadow-2xl"
+      >
+        <p class="text-xl dark-text mb-6">
+          A surge of protective adrenaline floods your system. You yank Chloe's
+          hand, shoving her behind you as you pivot and bolt. The sound of your
+          running footsteps echoes off the silent suburban houses, a frantic
+          drumbeat against the night. Chloe stumbles for a moment but quickly
+          finds her footing, running with you, her panicked breaths heavy in the
+          air. The chilling, raspy voice from the shadows calls out, "You can
+          run, but you can't hide," followed by the sickening whisper of a knife
+          slicing through the air. You glance back and see the shadowy figure of
+          Ghostface emerging from between the houses, a dark phantom on your
+          heels. You reach an intersection, and your heart sinks. To your left,
+          a narrow alleyway disappears into darkness, and to your right, a
+          small, overgrown path leads to what you remember is a shortcut through
+          a neighbor's yard, dense with bushes and trees.
+        </p>
+      </div>
+      <div class="mt-10 space-y-4">
+        <button
+          id="LeftButton"
+          class="w-full px-8 py-4 text-lg font-bold rounded-lg border-2 border-red-600 bg-red-800 hover:bg-red-800 transition duration-300 transform shadow-lg"
+        >
+          GO LEFT
+        </button>
+        <button
+          id="RightButton"
+          class="w-full px-8 py-4 text-lg font-bold rounded-lg border-2 border-red-600 bg-red-800 hover:bg-red-800 transition duration-300 transform shadow-lg"
+        >
+          GO RIGHT
+        </button>
+      </div>
+    </div>
+  </body>
+</html>

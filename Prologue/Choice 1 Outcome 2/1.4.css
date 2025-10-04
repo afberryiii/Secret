@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Creepster&family=Inter:wght@400;700&display=swap");
+
+body {
+  background-color: #0d0d0d;
+  color: #f3f4f6;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* --- FADE IN / FADE OUT CSS LOGIC --- */
+
+#sceneContainer {
+  opacity: 0; /* Starts invisible */
+  transition: opacity 2.1s ease-in-out; /* Match JS timeout */
+}
+
+#sceneContainer.is-visible {
+  opacity: 1; /* Fades in on load */
+}
+
+#sceneContainer.fade-out {
+  opacity: 0; /* Fades out on navigation */
+}
+
+/* Aesthetics */
+.red-glow {
+  font-family: "Creepster", cursive;
+  text-shadow: 0 0 10px rgba(255, 0, 0, 0.8), 0 0 20px rgba(255, 0, 0, 0.6);
+}
+.dark-text {
+  color: #d1d5db; /* Light gray text for readability */
+  line-height: 1.5;
+  font-size: 1rem;
+}
+button {
+  transition: all 0.3s ease;
+}
+button:hover {
+  box-shadow: 0 0 15px rgba(220, 38, 38, 0.7);
+  transform: translateY(-2px);
+  background-color: #991b1b;
+}
+/* Mobile responsiveness for container width */
+.max-w-10xl {
+  max-width: 100%;
+}
+@media (min-width: 640px) {
+  .max-w-10xl {
+    max-width: 768px; /* Max width on larger screens */
+  }
+}
