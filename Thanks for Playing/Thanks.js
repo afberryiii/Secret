@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Wait for fade-out animation to finish, then navigate
     setTimeout(() => {
-      window.location.href = nextFilePath;
+      window.location.replace(nextFilePath);
     }, 2100); // Match your CSS fade-out duration
   };
 

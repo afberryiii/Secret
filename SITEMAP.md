@@ -71,3 +71,8 @@ Chapter 1 Choice 2:
 2.3.html - Outcome of Clicking
 2.3.css - Styles for that Choice
 2.3.js - Logic for that Choice
+
+Thanks for Playing:
+Thanks.html - Shows the Thanks for Playing Page
+Thanks.css - Styles for Thank You Page
+Thanks.js - Logic for Thank You Page
