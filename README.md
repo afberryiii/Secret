@@ -4,4 +4,4 @@ The year is 2004. Neon glow sticks litter the floor, and the faint smell of chea
 
 Important:
 
-- https://afberryiii.github.io/Secret/Title%20Screen/index.html
+- When Booting up the game, make sure to add Title%20Screen/index.html to the https ://afberryiii.github.io/Secret/ (remove the space in between the https and the : to ensure the link works)
