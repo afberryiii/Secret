@@ -121,3 +121,13 @@ body {
   cursor: pointer;
   z-index: 1000;
 }
+
+@media (max-width: 600px) {
+  #sceneContainer {
+    font-size: 14px;
+    padding: 10px;
+  }
+  button {
+    width: 100%;
+  }
+}

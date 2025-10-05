@@ -50,12 +50,19 @@ button:hover {
   background-color: #991b1b;
 }
 
-/* Responsive width (using max-w-lg for focused reading) */
 .max-w-lg {
   max-width: 100%;
 }
 @media (min-width: 640px) {
   .max-w-lg {
     max-width: 640px;
+
+    #sceneContainer {
+      font-size: 14px;
+      padding: 10px;
+    }
+    button {
+      width: 100%;
+    }
   }
 }

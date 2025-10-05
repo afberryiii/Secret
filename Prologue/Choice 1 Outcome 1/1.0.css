@@ -50,6 +50,19 @@ button:hover {
 }
 @media (min-width: 640px) {
   .max-w-10xl {
-    max-width: 768px; /* Max width on larger screens */
+    max-width: 768px;
+    @media (min-width: 640px) {
+      .max-w-lg {
+        max-width: 640px;
+
+        #sceneContainer {
+          font-size: 14px;
+          padding: 10px;
+        }
+        button {
+          width: 100%;
+        }
+      }
+    }
   }
 }
