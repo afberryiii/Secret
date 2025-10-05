@@ -9,47 +9,79 @@ body {
   align-items: center;
   min-height: 100vh;
   padding: 20px;
+  overflow-x: hidden; /* Prevent sideways scrolling on mobile */
 }
 
-/* --- FADE IN / FADE OUT CSS LOGIC --- */
+/* ----------------------------------------------------- */
+/* --- FADE-IN / FADE-OUT LOGIC --- */
+/* ----------------------------------------------------- */
 
 #sceneContainer {
-  opacity: 0; /* Starts invisible */
-  transition: opacity 2.1s ease-in-out; /* Match JS timeout */
+  opacity: 0; /* start invisible */
+  transition: opacity 2.1s ease-in-out; /* matches JS timeout */
+  max-width: 100%;
 }
 
 #sceneContainer.is-visible {
-  opacity: 1; /* Fades in on load */
+  opacity: 1;
 }
 
 #sceneContainer.fade-out {
-  opacity: 0; /* Fades out on navigation */
+  opacity: 0;
 }
 
-/* Aesthetics */
+/* ----------------------------------------------------- */
+/* --- AESTHETICS --- */
+/* ----------------------------------------------------- */
+
 .red-glow {
   font-family: "Creepster", cursive;
   text-shadow: 0 0 10px rgba(255, 0, 0, 0.8), 0 0 20px rgba(255, 0, 0, 0.6);
 }
+
 .dark-text {
-  color: #d1d5db; /* Light gray text for readability */
-  line-height: 1.5;
-  font-size: 1rem;
+  color: #d1d5db;
+  line-height: 1.75;
 }
+
+/* Buttons */
 button {
   transition: all 0.3s ease;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  background: #dc2626;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 15px;
 }
+
 button:hover {
   box-shadow: 0 0 15px rgba(220, 38, 38, 0.7);
   transform: translateY(-2px);
   background-color: #991b1b;
 }
-/* Mobile responsiveness for container width */
-.max-w-10xl {
-  max-width: 100%;
+
+/* ----------------------------------------------------- */
+/* --- RESPONSIVENESS --- */
+/* ----------------------------------------------------- */
+
+/* Small screens (mobile) */
+@media (max-width: 640px) {
+  #sceneContainer {
+    font-size: 14px;
+    padding: 10px;
+  }
+  button {
+    width: 100%; /* full-width for thumbs */
+    font-size: 1.1rem;
+  }
 }
+
+/* Larger screens */
 @media (min-width: 640px) {
-  .max-w-10xl {
-    max-width: 768px; /* Max width on larger screens */
+  .max-w-lg {
+    max-width: 640px;
   }
 }

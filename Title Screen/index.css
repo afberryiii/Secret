@@ -9,6 +9,7 @@ body {
   align-items: center;
   background: black;
   color: white;
+  overflow-x: hidden; /* prevent sideways scrolling on mobile */
 }
 
 .scary-title {
@@ -21,14 +22,17 @@ body {
   text-align: center;
   padding-top: 5vh;
   animation: fade-in 5s forwards;
+  word-wrap: break-word; /* prevent overflow on long titles */
 }
 
 .call-image {
-  max-width: 80%;
-  height: 500px;
+  max-width: 90%;
+  max-height: 60vh; /* keep image inside mobile screen */
+  height: auto;
   animation: fade-in 10s forwards;
 }
 
+/* === Animations === */
 @keyframes subtle-glitch {
   0% {
     transform: translate(0, 0) scale(1);
@@ -40,94 +44,6 @@ body {
   }
   50% {
     transform: translate(0.5px, -0.5px) scale(1);
-    filter: hue-rotate(-1deg);
-  }
-  75% {
-    transform: translate(-0.5px, -0.5px) scale(1.005);
-    filter: hue-rotate(1deg);
-  }
-  100% {
-    transform: translate(0, 0) scale(1);
-    filter: hue-rotate(0deg);
-  }
-}
-
-@keyframes fade-in {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 5;
-  }
-}
-
-.fade-out {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-  transition: opacity 2s ease-out;
-}
-
-#pageContent {
-  transition: opacity 2s ease-in-out;
-}
-
-#pageContent.fade-out {
-  opacity: 0;
-}
-
-#finalExitScreen {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #000;
-  display: none; /* Initially hidden */
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  z-index: 2000;
-}
-
-#unmuteButton {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: #444;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  z-index: 1000;
-}
-
-#muteButton {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: #444;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  z-index: 1000;
-}
-
-@media (max-width: 600px) {
-  #sceneContainer {
-    font-size: 14px;
-    padding: 10px;
-  }
-  button {
-    width: 100%;
+    filter: hu;
   }
 }
