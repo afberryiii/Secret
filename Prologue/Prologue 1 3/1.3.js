@@ -2,8 +2,8 @@ document.title = "Prologue";
 
 document.addEventListener("DOMContentLoaded", () => {
   const container = document.getElementById("sceneContainer");
-  const goLeftButton = document.getElementById("LeftButton");
-  const goRightButton = document.getElementById("RightButton");
+  const goHideButton = document.getElementById("HideButton");
+  const goBreakInButton = document.getElementById("BreakInButton");
 
   if (container) {
     container.classList.add("is-visible");
@@ -20,17 +20,17 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 2100);
   };
 
-  if (goLeftButton) {
-    goLeftButton.addEventListener("click", () =>
-      navigate("../Choice%201%20Outcome%201/1.0.html")
+  if (goHideButton) {
+    goHideButton.addEventListener("click", () =>
+      navigate("../Prologue%201%203%201/1.5.html")
     );
   } else {
-    console.error("Error: Button with ID 'LeftButton' not found.");
+    console.error("Error: Button with ID 'HideButton' not found.");
   }
 
-  if (goRightButton) {
-    goRightButton.addEventListener("click", () =>
-      navigate("../Choice%201%20Outcome%202/1.4.html")
+  if (goBreakInButton) {
+    goBreakInButton.addEventListener("click", () =>
+      navigate("../Prologue%201%203%20%2/1.6.html")
     );
   }
 });

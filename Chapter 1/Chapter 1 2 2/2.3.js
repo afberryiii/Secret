@@ -1,9 +1,9 @@
-document.title = "Prologue";
+document.title = "Chapter 1: Echoes of the Past";
 
 document.addEventListener("DOMContentLoaded", () => {
   const container = document.getElementById("sceneContainer");
-  const goHideButton = document.getElementById("HideButton");
-  const goBreakInButton = document.getElementById("BreakInButton");
+  const goShowButton = document.getElementById("showButton");
+  const goKeepButton = document.getElementById("keepButton");
 
   if (container) {
     container.classList.add("is-visible");
@@ -20,17 +20,17 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 2100);
   };
 
-  if (goHideButton) {
-    goHideButton.addEventListener("click", () =>
-      navigate("../Choice%203%20Outcome%201/1.5.html")
+  if (goShowButton) {
+    goShowButton.addEventListener("click", () =>
+      navigate("../Chapter%201%202%202%201/2.6.html")
     );
   } else {
-    console.error("Error: Button with ID 'HideButton' not found.");
+    console.error("Error: Button with ID 'showButton' not found.");
   }
 
-  if (goBreakInButton) {
-    goBreakInButton.addEventListener("click", () =>
-      navigate("../Choice%203%20Outcome%202/1.6.html")
+  if (goKeepButton) {
+    goKeepButton.addEventListener("click", () =>
+      navigate("../Chapter%201%202%202%201/2.7.html")
     );
   }
 });

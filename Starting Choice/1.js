@@ -8,9 +8,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const shoutButton = document.getElementById("shoutButton");
 
   // ===== Page paths =====
-  const nextPagePath1 = "../Prologue/Choice%201/1.1.html";
-  const nextPagePath2 = "../Prologue/Choice%202/1.2.html";
-  const nextPagePath3 = "../Prologue/Choice%203/1.3.html";
+  const nextPagePath1 = "../Prologue/Prologue%201%201/1.1.html";
+  const nextPagePath2 = "../Prologue/Prologue%201%202/1.2.html";
+  const nextPagePath3 = "../Prologue/Prologue%201%203/1.3.html";
 
   // ===== FADE-IN LOGIC =====
   if (container) {

@@ -9,77 +9,51 @@ body {
   align-items: center;
   min-height: 100vh;
   padding: 20px;
-  overflow-x: hidden; /* Prevent sideways scrolling on mobile */
 }
 
 /* ----------------------------------------------------- */
-/* --- FADE-IN / FADE-OUT LOGIC --- */
+/* --- CRITICAL CSS FOR THE FADE-IN EFFECT --- */
 /* ----------------------------------------------------- */
 
 #sceneContainer {
-  opacity: 0; /* start invisible */
-  transition: opacity 2.1s ease-in-out; /* matches JS timeout */
-  max-width: 100%;
+  /* 1. Sets the default state to invisible */
+  opacity: 0;
+  /* 2. Defines the transition duration (must match the time in 1.html's setTimeout) */
+  transition: opacity 2.1s ease-in-out;
 }
 
+/* --- ADDED: This is what triggers the content to appear on page load --- */
 #sceneContainer.is-visible {
   opacity: 1;
 }
 
+/* --- ADDED: This is used by the next scene's buttons to fade out before navigation --- */
 #sceneContainer.fade-out {
   opacity: 0;
 }
 
-/* ----------------------------------------------------- */
-/* --- AESTHETICS --- */
-/* ----------------------------------------------------- */
-
+/* Aesthetics */
 .red-glow {
   font-family: "Creepster", cursive;
   text-shadow: 0 0 10px rgba(255, 0, 0, 0.8), 0 0 20px rgba(255, 0, 0, 0.6);
 }
-
 .dark-text {
   color: #d1d5db;
   line-height: 1.75;
 }
-
-/* Buttons */
 button {
   transition: all 0.3s ease;
-  padding: 12px 24px;
-  border: none;
-  border-radius: 8px;
-  background: #dc2626;
-  color: white;
-  font-size: 1rem;
-  cursor: pointer;
-  margin-top: 15px;
 }
-
 button:hover {
   box-shadow: 0 0 15px rgba(220, 38, 38, 0.7);
   transform: translateY(-2px);
   background-color: #991b1b;
 }
 
-/* ----------------------------------------------------- */
-/* --- RESPONSIVENESS --- */
-/* ----------------------------------------------------- */
-
-/* Small screens (mobile) */
-@media (max-width: 640px) {
-  #sceneContainer {
-    font-size: 14px;
-    padding: 10px;
-  }
-  button {
-    width: 100%; /* full-width for thumbs */
-    font-size: 1.1rem;
-  }
+/* Responsive width (using max-w-lg for focused reading) */
+.max-w-lg {
+  max-width: 100%;
 }
-
-/* Larger screens */
 @media (min-width: 640px) {
   .max-w-lg {
     max-width: 640px;
