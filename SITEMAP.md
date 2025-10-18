@@ -1,4 +1,4 @@
-- If you see the Chapter be like (For example Chapter 2 3 4 2 ), Its Chapter 2, Set 3, Second Choice, so on and so forth. If you see for example, Chapter 2 Intro, Chapter 2 E or Chapter 2 2 2 2 2 H, Thats the start, end of the chapter or halfway of the chapter with selected choices. If its Prologue, it will look something like Prologue 1 1 (Prologue, Set 1, Choice 1). Yes I know, the site map looks messy but bare with me.
+- If you see the Chapter be like (For example Chapter 2 3 4 2 ), Its Chapter 2, Set 3, Second Choice, so on and so forth. If you see for example, Chapter 2 Intro, Chapter 2 E or Chapter 2 2 2 2 2 H, Thats the start, end of the chapter or halfway of the chapter with selected choices. If its Prologue, it will look something like Prologue 1 1 (Prologue, Set 1, Choice 1). Yes I know, the site map looks messy but bare with me as it's in order by numbers.
 
 Core Structure & Landing Page (Title Screen)
 
@@ -205,6 +205,54 @@ Chapter 1 H2 1 1:
 2.24.html - Outcome of Clicking
 2.24.css - Styles for that Choice
 2.24.js - Logic for that choice
+
+Chapter 1 H2 1 1 2:
+
+2.25.html - Outcome of Clicking
+2.25.css - Styles for that Choice
+2.25.js - Logic for that choice
+
+Chapter 1 H2 1 1 2 1:
+
+2.26.html - Outcome of Clicking
+2.26.css - Styles for that Choice
+2.26.js - Logic for that choice
+
+Chapter 1 H2 1 1 2 1 2:
+
+2.27.html - Outcome of Clicking
+2.27.css - Styles for that Choice
+2.27.js - Logic for that choice
+
+Chapter 1 H2 1 1 2 1 2:
+
+2.27.html - Outcome of Clicking
+2.27.css - Styles for that Choice
+2.27.js - Logic for that choice
+
+Chapter 1 H1 1 1 1 1:
+
+2.28.html - Outcome of Clicking
+2.28.css - Styles for that Choice
+2.28.js - Logic for that choice
+
+Chapter 1 H2 1 1 2 1 2 1:
+
+2.29.html - Outcome of Clicking
+2.29.css - Styles for that Choice
+2.29.js - Logic for that choice
+
+Chapter 1 H 1 1:
+
+2.30.html - Outcome of Clicking
+2.30.css - Styles for that Choice
+2.30.js - Logic for that choice
+
+Chapter 2:
+
+3.html - Outcome of Clicking
+3.css - Styles for that Choice
+3.js - Logic for that choice
 
 Thanks for Playing:
 
