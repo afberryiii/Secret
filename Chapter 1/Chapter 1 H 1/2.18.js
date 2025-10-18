@@ -1,5 +1,3 @@
-document.title = "Chapter 1: Echoes of the Past";
-
 document.addEventListener("DOMContentLoaded", () => {
   const container = document.getElementById("sceneContainer");
   const continueButton = document.getElementById("continueButton");
@@ -21,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (continueButton) {
     continueButton.addEventListener("click", () =>
-      navigate("../Chapter%201%202%202%202%201%201/2.10.html")
+      navigate("../Chapter%201%20H%201%201/2.30.html")
     );
   } else {
     console.error("Error: Button with ID 'showButton' not found.");

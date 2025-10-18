@@ -2,7 +2,9 @@ document.title = "Chapter 1: Echoes of the Past";
 
 document.addEventListener("DOMContentLoaded", () => {
   const container = document.getElementById("sceneContainer");
-  const continueButton = document.getElementById("continueButton");
+  const checkButton = document.getElementById("checkButton");
+  const warnButton = document.getElementById("warnButton");
+  const findButton = document.getElementById("findButton");
 
   if (container) {
     container.classList.add("is-visible");
@@ -19,9 +21,17 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 2100);
   };
 
-  if (continueButton) {
-    continueButton.addEventListener("click", () =>
-      navigate("../Chapter%201%202%202%202%201%201/2.10.html")
+  if (checkButton) {
+    checkButton.addEventListener("click", () =>
+      navigate("../Chapter%201%20H%201/2.18.html")
+    );
+  } else {
+    console.error("Error: Button with ID 'showButton' not found.");
+  }
+
+  if (findButton) {
+    findButton.addEventListener("click", () =>
+      navigate("../Chapter%201%20H2%201%201%202/2.25.html")
     );
   } else {
     console.error("Error: Button with ID 'showButton' not found.");

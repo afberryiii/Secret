@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (continueButton) {
     continueButton.addEventListener("click", () =>
-      navigate("../Chapter%201%202%202%202%201%201/2.10.html")
+      navigate("../Chapter%201%202%202%202%201%201/2.21.html")
     );
   } else {
     console.error("Error: Button with ID 'showButton' not found.");
