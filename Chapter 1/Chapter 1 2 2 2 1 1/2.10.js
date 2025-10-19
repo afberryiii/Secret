@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (confrontButton) {
     confrontButton.addEventListener("click", () =>
-      navigate("../Chapter%201%202%202%202%202/2.15.html")
+      navigate("../Chapter%201%202%202%202%201%201%201/2.15.html")
     );
   } else {
     console.error("Error: Button with ID 'showButton' not found.");
@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (agreeButton) {
     agreeButton.addEventListener("click", () =>
-      navigate("../Chapter%201%202%201%202%202/2.14.html")
+      navigate("../Chapter%201%202%202%202%201%202%202%201/2.14.html")
     );
   }
 });
