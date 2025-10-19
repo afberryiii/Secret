@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (dropButton) {
     dropButton.addEventListener("click", () =>
-      navigate("../../Thanks%20for%20Playing/Thanks.html")
+      navigate("../Chapter%201%202%202%201/2.6.html")
     );
   }
 });
