@@ -1,7 +1,7 @@
 document.title = "Chapter 1: Echoes of the Past";
 
 document.addEventListener("DOMContentLoaded", () => {
-  const container = document.getElementById("Container");
+  const container = document.getElementById("sceneContainer");
   const gutButton = document.getElementById("gutButton");
   const dropButton = document.getElementById("dropButton");
 

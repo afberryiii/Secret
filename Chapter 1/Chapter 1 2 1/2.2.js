@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (goChangeButton) {
     goChangeButton.addEventListener("click", () =>
-      navigate("../Chapter%201%202%201%201/2.5.html")
+      navigate("../Chapter%201%202%201%202/2.5.html")
     );
   }
 });
