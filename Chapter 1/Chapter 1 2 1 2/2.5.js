@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (gutButton) {
     gutButton.addEventListener("click", () =>
-      navigate("../Chapter%201%202%202%201/2.9.html")
+      navigate("../Chapter%201%202%202%202%202/2.9.html")
     );
   } else {
     console.error("Error: Button with ID 'showButton' not found.");
