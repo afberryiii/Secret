@@ -1,3 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Creepster&family=Inter:wght@400;700&display=swap");
+
+body {
+  background-color: #0d0d0d;
+  color: #f3f4f6;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
 /* --- CRITICAL CSS FOR THE FADE-IN EFFECT --- */
 /* ----------------------------------------------------- */
 
